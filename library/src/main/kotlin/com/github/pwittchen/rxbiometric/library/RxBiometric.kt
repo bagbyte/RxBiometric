@@ -33,7 +33,7 @@ internal annotation class AuthenticatorTypes
 class RxBiometric {
   companion object {
     private lateinit var title: String
-    private lateinit var description: String
+    private var description: String? = null
     private var negativeButtonText: String? = null
     private var deviceCredentialAllowed: Boolean? = null
     private var negativeButtonListener: DialogInterface.OnClickListener? = null

@@ -22,7 +22,7 @@ import java.util.concurrent.Executor
 
 class RxBiometricBuilder {
   internal lateinit var title: String
-  internal lateinit var description: String
+  internal var description: String? = null
   internal var negativeButtonText: String? = null
   internal var negativeButtonListener: DialogInterface.OnClickListener? = null
   internal lateinit var executor: Executor
